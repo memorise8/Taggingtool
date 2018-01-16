@@ -1,4 +1,5 @@
 #pragma once
+
 class ToolData
 {
 public:
@@ -16,6 +17,9 @@ public:
 
 	std::vector<cv::Point> vecPoint;
 	std::vector<cv::Rect> vecRect;
+	
+	vt::VTouchData* vtouch;
+
 private:
 	ToolData();
 	static ToolData *instance;

@@ -5,6 +5,7 @@ ToolData* ToolData::instance;
 
 ToolData::ToolData()
 {
+	vtouch = vt::VTouchData::getInstance();
 }
 
 

@@ -12,16 +12,16 @@
 
 #include "../Depends/DefineSensor.h"
 
+
 // TODO: reference additional headers your program requires here
 #ifdef OPENCV
 	#include <opencv2\opencv.hpp>
 #endif // OPENCV
 
-#include "ToolData.h"
-
 #include <VTouchSensor.h>
 #include "VTouchData.h"
 
+#include "ToolData.h"
 
 #ifdef OPENCV
 #ifdef _DEBUG

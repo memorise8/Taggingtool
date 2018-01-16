@@ -55,6 +55,8 @@ namespace vt {
 			this->m_worldMat.create(this->depthHeight, this->depthWidth, CV_32FC3);
 			this->m_confidenceMat = cv::Mat(this->depthHeight, this->depthWidth, CV_8U);		// only for PMD
 
+
+			this->m_outMat = cv::Mat(this->depthHeight, this->depthWidth, CV_8UC3);
 			// opencv 2.x
 			//this->m_depthMatBuffer = cv::Mat(this->depthHeight, this->depthWidth, CV_16U, NULL);
 			//this->m_bodyIndexMatBuffer = cv::Mat(this->depthHeight, this->depthWidth, CV_8U, NULL);

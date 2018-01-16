@@ -5,6 +5,8 @@ namespace vt
 	class Core {
 	
 	public:
+		Core();
+		~Core();
 		int GetSensorData();
 		int Initialize();
 		int Run();

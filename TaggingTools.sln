@@ -4,14 +4,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TaggingTools", "TaggingTools\TaggingTools.vcxproj", "{BB60EACB-59B3-4273-B17C-31147441D2E2}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VTouchSensor", "VTouchSensor\VTouchSensor.vcxproj", "{5436AA65-42C9-4FD7-AEC0-0C10B3099A46}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5436AA65-42C9-4FD7-AEC0-0C10B3099A46} = {5436AA65-42C9-4FD7-AEC0-0C10B3099A46}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Depends", "Depends", "{F844AF76-E351-4348-AFCD-2891D0AEB9CD}"
 	ProjectSection(SolutionItems) = preProject
 		Depends\DefineSensor.h = Depends\DefineSensor.h
 		Depends\LibOpenCV.h = Depends\LibOpenCV.h
 	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VTouchSensor", "VTouchSensor\VTouchSensor.vcxproj", "{5436AA65-42C9-4FD7-AEC0-0C10B3099A46}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -9,6 +9,10 @@ namespace vt {
 	{
 	}
 
+	Core::~Core()
+	{
+	}
+
 	int Core::GetSensorData()
 	{
 
@@ -114,10 +118,8 @@ namespace vt {
 		while (is_running)
 		{
 
-			/* 1. ������ ���ο� �������� ���Դ��� Ȯ�� */
 			hr = vtouch->sensor->UpdateFrame();
 
-			/* 2. ������ �����͸� vtouch Ŭ�������� ���� */
 			if (hr >= 0)
 			{
 
@@ -130,6 +132,7 @@ namespace vt {
 				makeOutImage();
 			}
 
+			vtouch->sensor->ReleaseFrame();
 		}
 
 	}

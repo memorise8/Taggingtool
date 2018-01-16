@@ -14,7 +14,8 @@ void Read()
 
 void Write()
 {
-	FileManager fm("");
+	const char* strStoreFileDir = "";
+	FileManager fm(strStoreFileDir);
 	fm.Write();
 }
 
@@ -34,12 +35,14 @@ void convertDataFromVideo()
 {
 	vt::Core core;
 
-	if(SENSOR_TYPE == SENSOR_UNKNOWN)
+	vt::VTouchData::getInstance()->sensorType = SENSOR_KINECT_V2;
+	
+	if(vt::VTouchData::getInstance()->sensorType == -1)
 	{
 		std::cout << "There is no define sensor type" << std::endl;
 		return;
 	}
-	else if(SENSOR_TYPE == SENSOR_KINECT_V2)
+	else if(vt::VTouchData::getInstance()->sensorType == SENSOR_KINECT_V2)
 	{
 		if(core.Initialize() < 0)
 		{
@@ -50,24 +53,24 @@ void convertDataFromVideo()
 			core.Run();
 		}
 	}
-	else if(SENSOR_TYPE == SENSOR_PMD)
+	else if(vt::VTouchData::getInstance()->sensorType == SENSOR_PMD)
 	{
 
 	}
-	else if(SENSOR_TYPE == SENSOR_MEERAE)
+	else if(vt::VTouchData::getInstance()->sensorType == SENSOR_MEERAE)
 	{
 
 	}
-};
-
 }
 
 int main()
 {
-	Read();
+	while (1)
+	{
+		
+		convertDataFromVideo();
 
-	SetData();
-
+	}
     return 0;
 }
 

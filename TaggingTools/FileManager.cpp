@@ -81,6 +81,11 @@ void FileManager::Read() // read all file
 
 void FileManager::Write()
 {
+	char fileName[200];
+	sprintf_s(fileName, "%d", frameNum);
+
+	std::string strFileName = fileName;
+	
 	frameNum++;
 }
 
