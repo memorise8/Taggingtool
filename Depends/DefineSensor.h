@@ -1,0 +1,18 @@
+#pragma once
+#define USE_SENSOR_KINECT_V2
+//#define USE_SENSOR_PMD
+//#define USE_SENSOR_MEERAE
+
+enum SENSOR_TYPE {
+	SENSOR_UNKNOWN = -1,
+	SENSOR_KINECT_V2 = 0,
+	SENSOR_PMD = 1,
+	SENSOR_MEERAE = 2,
+};
+
+enum CONFIG_PARAM {
+
+
+};
+
+

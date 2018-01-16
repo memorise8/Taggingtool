@@ -1,0 +1,39 @@
+# no build files
+VRE/obj/
+VTouch_Core/x64/
+VTouch_Core/lib_Debug/
+VTouch_Core/lib_Release/
+VTouch_Core/Release/
+VTouch_Core/Debug/
+x64/
+Debug/
+Release/
+lib_Debug/
+lib_Release/
+build/
+VTouch_Core/image/
+#VTouch_Core/model/
+#VTouch_Core/weights/
+VTouch_Core/*.lib
+VTouchSensor/
+
+# no visual studio files
+ipch/
+*.suo
+.vs/
+
+# Misc.
+*.db
+*.opendb
+*.7z
+*.bak
+*.rrf
+*.VC
+
+# Linux related
+#CMake
+.vscode
+
+VTouch_Core/HandPoseEstimator/Parameters.h
+VTouch_Core/HandPoseEstimator/Parameters.h
+VTouchCore_V2.zip

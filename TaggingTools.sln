@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TaggingTools", "TaggingTools\TaggingTools.vcxproj", "{BB60EACB-59B3-4273-B17C-31147441D2E2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VTouchSensor", "VTouchSensor\VTouchSensor.vcxproj", "{5436AA65-42C9-4FD7-AEC0-0C10B3099A46}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Depends", "Depends", "{F844AF76-E351-4348-AFCD-2891D0AEB9CD}"
+	ProjectSection(SolutionItems) = preProject
+		Depends\DefineSensor.h = Depends\DefineSensor.h
+		Depends\LibOpenCV.h = Depends\LibOpenCV.h
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB60EACB-59B3-4273-B17C-31147441D2E2}.Debug|x64.ActiveCfg = Debug|x64
+		{BB60EACB-59B3-4273-B17C-31147441D2E2}.Debug|x64.Build.0 = Debug|x64
+		{BB60EACB-59B3-4273-B17C-31147441D2E2}.Debug|x86.ActiveCfg = Debug|Win32
+		{BB60EACB-59B3-4273-B17C-31147441D2E2}.Debug|x86.Build.0 = Debug|Win32
+		{BB60EACB-59B3-4273-B17C-31147441D2E2}.Release|x64.ActiveCfg = Release|x64
+		{BB60EACB-59B3-4273-B17C-31147441D2E2}.Release|x64.Build.0 = Release|x64
+		{BB60EACB-59B3-4273-B17C-31147441D2E2}.Release|x86.ActiveCfg = Release|Win32
+		{BB60EACB-59B3-4273-B17C-31147441D2E2}.Release|x86.Build.0 = Release|Win32
+		{5436AA65-42C9-4FD7-AEC0-0C10B3099A46}.Debug|x64.ActiveCfg = Debug|x64
+		{5436AA65-42C9-4FD7-AEC0-0C10B3099A46}.Debug|x64.Build.0 = Debug|x64
+		{5436AA65-42C9-4FD7-AEC0-0C10B3099A46}.Debug|x86.ActiveCfg = Debug|Win32
+		{5436AA65-42C9-4FD7-AEC0-0C10B3099A46}.Debug|x86.Build.0 = Debug|Win32
+		{5436AA65-42C9-4FD7-AEC0-0C10B3099A46}.Release|x64.ActiveCfg = Release|x64
+		{5436AA65-42C9-4FD7-AEC0-0C10B3099A46}.Release|x64.Build.0 = Release|x64
+		{5436AA65-42C9-4FD7-AEC0-0C10B3099A46}.Release|x86.ActiveCfg = Release|Win32
+		{5436AA65-42C9-4FD7-AEC0-0C10B3099A46}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
